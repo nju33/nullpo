@@ -26,10 +26,9 @@
     "xo": "^0.18.1"
   },
   "keywords": [
-    "decorator",
-    "injecte",
-    "injector",
-    "store"
+    "compact",
+    "array",
+    "object"
   ],
   "license": "MIT",
   "main": "index.js",
