@@ -1,7 +1,0 @@
-*.lock
-/.babelrc
-/.gitignore
-/example/
-/lib/
-/test/
-/gulpfile.babel.js
