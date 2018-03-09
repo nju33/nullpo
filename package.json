@@ -43,7 +43,7 @@
   "scripts": {
     "build": "microbundle --name nullpo -i lib/nullpo.js",
     "dev": "gulp watch",
-    "prepublish": "yarn build",
+    "prepare": "yarn build",
     "test": "xo && ava"
   },
   "xo": {
