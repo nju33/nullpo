@@ -20,10 +20,13 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-plumber": "^1.2.0",
     "microbundle": "^0.4.4",
+    "nyc": "^11.4.1",
+    "prettier": "^1.11.1",
     "xo": "^0.20.3"
   },
   "keywords": [
@@ -48,7 +51,11 @@
     "build": "microbundle --name nullpo -i lib/nullpo.js",
     "dev": "gulp watch",
     "prepare": "yarn build",
-    "test": "xo && ava"
+    "test": "xo && yarn test:ava",
+    "ci:test": "xo && yarn test:nyc:ava && yarn test:report",
+    "test:ava": "ava",
+    "test:nyc:ava": "nyc ava",
+    "test:report": "nyc report --reporter=text-lcov | node_modules/.bin/coveralls"
   },
   "xo": {
     "space": 2,
