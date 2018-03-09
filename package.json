@@ -32,6 +32,7 @@
     "object"
   ],
   "license": "MIT",
+  "types": "nullpo.d.ts",
   "main": "dist/nullpo.js",
   "umd:main": "dist/nullpo.umd.js",
   "module": "dist/nullpo.m.js",
