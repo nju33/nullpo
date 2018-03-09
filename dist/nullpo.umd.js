@@ -1,0 +1,2 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):e.nullpo=t()}(this,function(){return function(e){if(Array.isArray(e))return e.filter(function(e){return e});if("object"==typeof e){for(var t=0,n=Object.keys(e).filter(function(t){return!e[t]});t<n.length;t+=1)delete e[n[t]];return e}return e}});
+//# sourceMappingURL=nullpo.umd.js.map

@@ -23,6 +23,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-plumber": "^1.2.0",
+    "microbundle": "^0.4.4",
     "xo": "^0.20.3"
   },
   "keywords": [
@@ -31,13 +32,16 @@
     "object"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/nullpo.js",
+  "umd:main": "dist/nullpo.umd.js",
+  "module": "dist/nullpo.m.js",
+  "source": "src/nullpo.js",
   "publishConfig": {
     "access": "public"
   },
   "repository": "nju33/nullpo",
   "scripts": {
-    "build": "gulp lib",
+    "build": "microbundle --name nullpo -i lib/nullpo.js",
     "dev": "gulp watch",
     "prepublish": "yarn build",
     "test": "xo && ava"
